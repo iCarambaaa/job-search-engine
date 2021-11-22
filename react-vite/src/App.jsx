@@ -1,21 +1,22 @@
 import { useState } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import { Col, Container, Row } from "react-bootstrap";
 import "./App.css";
+import { Col, Container, Row } from "react-bootstrap";
+import Home from "./components/home";
 
-const App = () => {
+function App() {
   const [count, setCount] = useState(0);
 
   return (
     <BrowserRouter>
       <Container>
         <Row>
-          <Col sm={12} className="text-center App App-header ">
+          <Col sm={12} className="text-center background-div App App-header">
             <Link to="/">
-              <p className="App-link ">Human Resource Mashine</p>
+              <h1 className="App-link">Human Resource Mashine</h1>
             </Link>
           </Col>
-          {/* <CartIndicator cartLength={cart.length} /> */}
+          <Home />
         </Row>
         <hr />
         <Routes>
@@ -26,6 +27,6 @@ const App = () => {
       </Container>
     </BrowserRouter>
   );
-};
+}
 
 export default App;

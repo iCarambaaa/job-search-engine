@@ -20,7 +20,7 @@
     rgba(195, 139, 34, 0.9164799708946079) 0%,
     rgba(215, 219, 140, 1) 100%
   );
-  min-height: 100vh;
+
   display: flex;
   /* flex-direction: column;
   align-items: center; */
