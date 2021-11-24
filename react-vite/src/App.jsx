@@ -11,7 +11,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Container>
+      <Container fluid>
         <Row>
           <Col sm={12} className="text-center background-div App App-header">
             <Link to="/">

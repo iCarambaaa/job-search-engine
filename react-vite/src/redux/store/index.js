@@ -5,6 +5,7 @@ export const initialState = {
 
     favorites: [],
     selectedJob: {},
+    jobList: []
 
 }
 
