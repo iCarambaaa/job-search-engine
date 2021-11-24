@@ -42,7 +42,7 @@ const Searchbar = ({ saveFetchedJobs }) => {
           </Form.Text>
           <Form.Control
             type="search"
-            placeholder="Search new job here... and press Enter"
+            placeholder="type here => press enter"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
           />
