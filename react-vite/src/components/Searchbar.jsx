@@ -11,7 +11,7 @@ const mapDispatchToProps = (dispatch) => ({
   },
 });
 
-const Searchbar = () => {
+const Searchbar = ({ saveFetchedJobs }) => {
   const baseEndpoint = "https://strive-jobs-api.herokuapp.com/jobs?search=";
 
   const [query, setQuery] = useState("");
@@ -28,7 +28,8 @@ const Searchbar = () => {
 
     const { data } = await response.json();
 
-    mapDispatchToProps(data);
+    saveFetchedJobs(data);
+    // console.log(data);
   };
 
   return (
