@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import { Col, Container, Row } from "react-bootstrap";
 import Home from "./components/home";
+import { connect } from "react-redux";
 
 function App() {
   const [count, setCount] = useState(0);
