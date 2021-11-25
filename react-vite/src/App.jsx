@@ -3,11 +3,11 @@ import "bootstrap/dist/css/bootstrap.css";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import { Col, Container, Row } from "react-bootstrap";
-import Home from "./components/home";
+import Home from "./components/Home";
 import { connect } from "react-redux";
 
 function App() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
   return (
     <BrowserRouter>
